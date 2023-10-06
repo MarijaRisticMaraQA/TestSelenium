@@ -119,5 +119,6 @@ public class Vezba {
 		Arrays.sort(fiveNumbersArr);
 
 		System.out.println("Sorted list: " + Arrays.toString(fiveNumbersArr));
+		System.out.println("_________________________");
 	}
 }
