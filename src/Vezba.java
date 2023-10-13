@@ -1,4 +1,8 @@
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
+import java.util.Scanner;
 
 public class Vezba {
 
@@ -120,5 +124,27 @@ public class Vezba {
 
 		System.out.println("Sorted list: " + Arrays.toString(fiveNumbersArr));
 		System.out.println("_________________________");
+
+		// Vezba 17: Pogadjaj broj
+
+		Random rand = new Random();
+		int zamisljeniBroj = rand.nextInt(3);
+
+		Scanner scanner = new Scanner(System.in);
+
+		while (true) {
+
+			System.out.println("Koji broj sam zamislio: ");
+			System.out.println("Unesi broj: ");
+			int unesenBroj = scanner.nextInt();
+
+			if (unesenBroj != zamisljeniBroj) {
+
+				System.out.println("Nije");
+			} else {
+
+				System.out.println("Jeste");
+			}
+		}
 	}
 }
